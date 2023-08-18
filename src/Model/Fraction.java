@@ -22,6 +22,10 @@ public class Fraction {
         this._numerant = this._numerant * factor;
         this._denumerant = this._denumerant * factor;
     }
+    public void reduce(int divisor){
+        this._numerant = this._numerant / divisor;
+        this._denumerant = this._denumerant / divisor;
+    }
     public void basicForm(){
 
     }

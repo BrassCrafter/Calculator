@@ -1,12 +1,279 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="View">
-  <grid id="27dc6" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="true" same-size-vertically="true" hgap="-1" vgap="-1">
-    <margin top="0" left="0" bottom="0" right="0"/>
+  <grid id="27dc6" layout-manager="FormLayout">
+    <rowspec value="center:d:noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:33px:grow"/>
+    <colspec value="fill:24px:grow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:d:grow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:150px:grow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:d:grow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:96px:noGrow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:d:grow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:118px:noGrow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:74px:noGrow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:max(d;4px):noGrow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:86px:grow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:104px:noGrow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:79px:noGrow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:26px:grow"/>
     <constraints>
-      <xy x="20" y="20" width="489" height="393"/>
+      <xy x="20" y="18" width="1440" height="239"/>
     </constraints>
     <properties/>
     <border type="none"/>
-    <children/>
+    <children>
+      <component id="92d8b" class="javax.swing.JTextField" binding="Tf_N1">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value=""/>
+          <toolTipText value="Zähler"/>
+        </properties>
+      </component>
+      <component id="eee10" class="javax.swing.JComboBox" binding="JCB_OperatorSelector">
+        <constraints>
+          <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <toolTipText value="Wähle einen Rechenoperator aus"/>
+        </properties>
+      </component>
+      <component id="2341f" class="javax.swing.JTextField" binding="Tf_N2">
+        <constraints>
+          <grid row="2" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value=""/>
+          <toolTipText value="Zähler"/>
+        </properties>
+      </component>
+      <component id="7aeb4" class="javax.swing.JTextField" binding="Tf_Dn2">
+        <constraints>
+          <grid row="6" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <toolTipText value="Nenner"/>
+        </properties>
+      </component>
+      <component id="95b3a" class="javax.swing.JTextField" binding="Tf_Dn1">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <toolTipText value="Nenner"/>
+        </properties>
+      </component>
+      <component id="7e38d" class="javax.swing.JLabel" binding="JL_FDif2">
+        <constraints>
+          <grid row="4" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <text value="—————————"/>
+        </properties>
+      </component>
+      <component id="3956a" class="javax.swing.JLabel" binding="JL_FDif1">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <text value="—————————"/>
+        </properties>
+      </component>
+      <component id="ec223" class="javax.swing.JLabel" binding="result1">
+        <constraints>
+          <grid row="4" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <text value="="/>
+        </properties>
+      </component>
+      <component id="d873b" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="10" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <text value="—————————"/>
+        </properties>
+      </component>
+      <component id="623c3" class="javax.swing.JLabel" binding="result2">
+        <constraints>
+          <grid row="4" column="12" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <text value="="/>
+        </properties>
+      </component>
+      <component id="2397c" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="18" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <text value="————"/>
+        </properties>
+      </component>
+      <component id="58a4b" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="20" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <text value="="/>
+        </properties>
+      </component>
+      <component id="6f9d1" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="10" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <background color="-12828863"/>
+          <font name="Artifakt Element Heavy" size="22"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="Bruchrechner"/>
+        </properties>
+        <clientProperties>
+          <html.disable class="java.lang.Boolean" value="false"/>
+        </clientProperties>
+      </component>
+      <component id="1d176" class="javax.swing.JLabel" binding="JL_SplitNum">
+        <constraints>
+          <grid row="2" column="18" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+          <toolTipText value="Zähler"/>
+        </properties>
+      </component>
+      <component id="40169" class="javax.swing.JLabel" binding="JL_SplitDn">
+        <constraints>
+          <grid row="6" column="18" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+          <toolTipText value="Nenner"/>
+        </properties>
+      </component>
+      <component id="93ee2" class="javax.swing.JLabel" binding="JL_ResDecimal">
+        <constraints>
+          <grid row="4" column="22" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+          <toolTipText value="Als Dezimalzahl"/>
+        </properties>
+      </component>
+      <component id="2fdb7" class="javax.swing.JLabel" binding="JL_SplitInt">
+        <constraints>
+          <grid row="4" column="16" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <text value="Label"/>
+          <toolTipText value="Überschuss"/>
+        </properties>
+      </component>
+      <component id="e2bbb" class="javax.swing.JLabel" binding="JL_defaultN">
+        <constraints>
+          <grid row="2" column="10" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+          <toolTipText value="Zähler"/>
+        </properties>
+      </component>
+      <component id="6502f" class="javax.swing.JLabel" binding="JL_DefaultDn">
+        <constraints>
+          <grid row="6" column="10" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+          <toolTipText value="Nenner"/>
+        </properties>
+      </component>
+      <component id="92e7c" class="javax.swing.JLabel" binding="JL_SimpleN" custom-create="true">
+        <constraints>
+          <grid row="2" column="14" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+          <toolTipText value="Zähler"/>
+        </properties>
+      </component>
+      <component id="c6185" class="javax.swing.JLabel" binding="JL_SimpleDn">
+        <constraints>
+          <grid row="6" column="14" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+          <toolTipText value="Nenner"/>
+        </properties>
+      </component>
+      <component id="83499" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="14" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <text value="————"/>
+        </properties>
+      </component>
+      <vspacer id="46cb7">
+        <constraints>
+          <grid row="8" column="10" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-vert="false"/>
+        </constraints>
+      </vspacer>
+      <hspacer id="9606a">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="93b7e">
+        <constraints>
+          <grid row="4" column="24" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+      </hspacer>
+    </children>
   </grid>
 </form>
